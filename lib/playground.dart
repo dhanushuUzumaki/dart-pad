@@ -562,6 +562,8 @@ class Playground implements GistContainer, GistController {
       querySelector('#dartpad_version').text = versionText;
     }).catchError((e) => null);
 
+    showWebContent(); // show by default dart-lang#1966
+
     _finishedInit();
   }
 
